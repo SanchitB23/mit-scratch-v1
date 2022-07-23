@@ -25,7 +25,7 @@ const DisplayMessage = ({comp_id, hasTimer, isThinking}) => {
       return;
     }
     setState({...state, show_msg: true});
-    el.style.display = "inline-block";
+    el.style.display = "block";
     el.style.position = "relative";
 
     if (isThinking) {

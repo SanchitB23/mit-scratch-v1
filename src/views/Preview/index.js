@@ -85,11 +85,11 @@ export default function Preview() {
           >
             <div id={`${id}-div`} className="character">
               <div
-                  className="hidden border-2 p-2 ml-3 mb-2 w-auto whitespace-nowrap"
+                  className="hidden border-2 p-1 ml-3 w-auto whitespace-nowrap rounded-full text-center"
                   id={id + "-message-box"}
               />
               <div
-                  className="hidden rounded-full border-2 w-4 left-1/2 h-4 ml-3 mb-2 whitespace-nowrap"
+                  className="hidden rounded-full border-2 w-4 left-1/2 h-4 ml-3 mb-2 mt-1 whitespace-nowrap"
                   id={id + "-message-box1"}
               />
               <CatSprite char_id={id}/>
