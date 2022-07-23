@@ -23,7 +23,7 @@ const Hide = ({comp_id, shouldHideCharacter, shouldShowCharacter}) => {
   }
   if (shouldShowCharacter) {
     return (
-        <ItemContainer comp_id={comp_id} handleClick={onShow} color="purple" classStyles="justify-center">
+        <ItemContainer comp_id={comp_id} handleClick={onShow} classStyles="justify-center bg-purple-500">
           Show
         </ItemContainer>
     );

@@ -18,7 +18,7 @@ const GoTo = ({comp_id, isY, isX}) => {
     console.log("goto", state, isX, isY, activeCharacter)
   }
   return (
-      <ItemContainer comp_id={comp_id} handleClick={gotoXY} color="blue">
+      <ItemContainer comp_id={comp_id} handleClick={gotoXY}  classStyles="bg-blue-500">
         Go to {isX && <Fragment>X : <input
           className="text-black text-center w-10 mx-2 rounded-lg bg-blue-100"
           type="number"

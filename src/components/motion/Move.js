@@ -21,7 +21,7 @@ const Move = ({comp_id, isMoveX}) => {
     setSteps(parseInt(e.target.value))
   }
   return (
-      <ItemContainer comp_id={comp_id} handleClick={handleClick} color="blue">
+      <ItemContainer comp_id={comp_id} handleClick={handleClick} classStyles="bg-blue-500">
         Move{" "}
         <input
             type="number"

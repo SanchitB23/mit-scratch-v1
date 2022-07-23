@@ -43,7 +43,7 @@ const DisplayMessage = ({comp_id, hasTimer, isThinking}) => {
 
   return (
       <ItemContainer handleClick={() => {
-      }} color="purple">
+      }} classStyles="bg-purple-500">
         <div> {isThinking ? "Think" : "Say"} <input
             className="text-black text-center w-9/12 mx-2 rounded-lg bg-blue-100"
             type="text"
@@ -62,7 +62,7 @@ const DisplayMessage = ({comp_id, hasTimer, isThinking}) => {
         /></div>}
         <div
             id={comp_id}
-            className="flex justify-center	 text-center flex-row flex-wrap bg-purple-700 text-white px-2 py-1 my-2 text-sm cursor-pointer"
+            className="flex justify-center text-center flex-row flex-wrap bg-purple-700 text-white px-2 py-1 my-2 text-sm cursor-pointer"
             onClick={() => displayMessage()}
         >
           {isThinking ? `Think ${state.message}` : `Say ${state.message}`}

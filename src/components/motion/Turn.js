@@ -22,7 +22,7 @@ const Turn = ({comp_id, isClockwise}) => {
     }
   };
   return (
-      <ItemContainer comp_id={comp_id} handleClick={handleClick} color="blue">
+      <ItemContainer comp_id={comp_id} handleClick={handleClick} classStyles="bg-blue-500">
         {"Turn "}
         <Icon name={isClockwise ? "redo" : "undo"} size={15} className="text-white mx-2"/>
         <input

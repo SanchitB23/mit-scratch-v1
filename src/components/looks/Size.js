@@ -16,7 +16,7 @@ const Size = ({comp_id}) => {
   console.log("size", comp_id)
   return (
       <ItemContainer handleClick={() => {
-      }} color="purple">
+      }}  classStyles="bg-purple-500">
         <div className="grid grid-cols-2 my-2">
           <div className="text-white">Size:</div>
           <input
