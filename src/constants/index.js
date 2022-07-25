@@ -20,4 +20,4 @@ export const looksComponents = [
 
 export const eventsComponents = []//["BROADCAST", "FLAG_CLICK", "KEY_PRESS", "SPRITE_CLICK", "RECEIVE_BROADCAST"];
 
-export const controlComponents = []//["WAIT", "REPEAT", "FOREVER", "IF", "IF_ELSE", "WAIT_UNTIL", "REPEAT_UNTIL"];
+export const controlComponents = ["WAIT", "REPEAT"]//["WAIT", "REPEAT", "FOREVER", "IF", "IF_ELSE", "WAIT_UNTIL", "REPEAT_UNTIL"];

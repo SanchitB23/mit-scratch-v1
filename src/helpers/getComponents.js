@@ -3,7 +3,7 @@ import {GoTo, Move, Turn} from "../components/motion";
 import DisplayMessage from "../components/looks/DisplayMessage";
 import Hide from "../components/looks/Hide";
 import Size from "../components/looks/Size";
-
+import {WaitRepeat} from "../components/control";
 
 const getComponent = (key, id) => {
   switch (key) {
@@ -35,7 +35,10 @@ const getComponent = (key, id) => {
       return <Hide comp_id={id} shouldShowCharacter/>
     case "SIZE":
       return <Size comp_id={id}/>
-
+    case "WAIT":
+      return <WaitRepeat comp_id={id} isWait/>
+    case "REPEAT":
+      return <WaitRepeat comp_id={id}/>
     default:
       return key;
   }
