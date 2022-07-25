@@ -94,7 +94,7 @@ export default function MidArea() {
         New List
       </button>
     </div>
-    <div className="grid grid-gap-2 grid-cols-1 md:grid-cols-2 h-full">
+    <div className="grid grid-gap-2 grid-cols-1 lg:grid-cols-2 h-full">
       {list.map(({comps, id}) => (
           <div className="w-60" key={id}>
             <div className="p-4 shadow-md">
