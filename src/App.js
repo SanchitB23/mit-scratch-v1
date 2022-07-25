@@ -38,15 +38,15 @@ export default function App() {
 
   return (
       <div className="bg-blue-100 pt-6 font-sans">
-        <div className="h-screen overflow-hidden flex flex-row  ">
+        <div className="flex md:flex-row flex-col w-full md:overflow-hidden md:h-screen">
           <DragDropContext onDragEnd={onDragEnd}>
             <div
-                className="flex-1 h-screen overflow-hidden flex flex-row bg-white border-t border-r border-gray-200 rounded-tr-xl mr-2">
+                className="md:flex-1 md:overflow-auto flex flex-col md:flex-row bg-white border-t border-r border-gray-200 rounded-tr-xl rounded-tl-xl md:rounded-tr-0 md:mr-2">
               <Sidebar/> <MidArea/>
             </div>
           </DragDropContext>
           <div
-              className="w-1/3 h-screen overflow-hidden flex flex-row bg-white border-t border-l border-gray-200 rounded-tl-xl ml-2">
+              className="md:w-1/3 sm:w-full h-screen relative md:overflow-scroll flex flex-row bg-white border-t md:border-l border-gray-200 rounded-tl-xl md:ml-2 mt-2 md:mt-0 rounded-tr-xl md:rounded-tr-0">
             <Preview/>
           </div>
         </div>

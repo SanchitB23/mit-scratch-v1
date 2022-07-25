@@ -57,7 +57,7 @@ export default function Preview() {
     dispatch(setActiveAction(e.target.value))
   }
 
-  return (<div className="flex-none h-full overflow-y-auto p-2 w-full">
+  return (<div className="flex-none overflow-y-auto p-2 w-full">
     <div className="flex justify-between items-center">
       <ViewTitle>Preview</ViewTitle>
       <div className="flex flex-col">

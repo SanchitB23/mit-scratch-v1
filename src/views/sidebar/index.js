@@ -1,21 +1,13 @@
-import React, {useRef} from "react";
-import Icon from "../../components/Icon";
-import {Draggable, Droppable} from "react-beautiful-dnd";
+import React from "react";
 import ViewTitle from "../../components/common/view-title";
-import CodeTypeTitle from "./code-type-title";
 import {controlComponents, eventsComponents, looksComponents, motionComponents} from "../../constants";
 import DragDrop from "./drag-drop";
 
 export default function Sidebar() {
-  const dragItem = useRef()
-
-  function dragStart(event, position) {
-    dragItem.current = position
-    console.log("Testtt", event.target.innerHTML)
-  }
 
   return (
-      <div className="w-60 flex-none h-full overflow-y-auto flex flex-col items-start p-2 border-r border-gray-200">
+      <div
+          className="w-full md:w-60 md:flex-none h-fit md:h-full md:h-full md:overflow-y-auto flex flex-col items-start p-2 border-b md:border-b-none md:border-r border-gray-200">
         <ViewTitle>Side Bar</ViewTitle>
         {/*Events*/}
         <DragDrop name={"events"} type={eventsComponents}/>

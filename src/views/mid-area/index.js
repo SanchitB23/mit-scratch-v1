@@ -2,7 +2,7 @@ import React from "react";
 import ViewTitle from "../../components/common/view-title";
 import {Draggable, Droppable} from "react-beautiful-dnd";
 import getComponent from "../../helpers/getComponents";
-import {connect, useDispatch, useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {getEventsSelector, getListSelector} from "../../redux/selectors";
 import {addList} from "../../redux/actions";
 
@@ -10,7 +10,7 @@ import {addList} from "../../redux/actions";
 export default function MidArea() {
   const dispatch = useDispatch()
   const event_values = useSelector(getEventsSelector)
-  const {midAreaLists:list} = useSelector(getListSelector)
+  const {midAreaLists: list} = useSelector(getListSelector)
   console.log("midList", list)
   const eventFire = (el, etype) => {
     if (el && el.fireEvent) {
@@ -86,7 +86,7 @@ export default function MidArea() {
     }, 1000);
   };
 
-  return <div className="flex-1 h-full overflow-auto p-2">
+  return <div className="flex-1 h-full p-2 overflow-auto md:w-1/4">
     <div className="flex justify-between"><ViewTitle>Mid Area</ViewTitle>
       <button
           onClick={() => dispatch(addList())}
@@ -94,7 +94,7 @@ export default function MidArea() {
         New List
       </button>
     </div>
-    <div className="grid grid-flow-col">
+    <div className="grid grid-gap-2 grid-cols-1 md:grid-cols-2 h-full">
       {list.map(({comps, id}) => (
           <div className="w-60" key={id}>
             <div className="p-4 shadow-md">
